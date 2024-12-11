@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="flex items-end justify-center h-sm:md:h-[70vh] h-sm:h-[62vh] h-[54vh] max-w-[806.966px] mx-auto relative">
           <Image
-            src="/fuddai-tv.png"
+            src="/tv-fuderrr.svg"
             alt="Fudderai"
             className="z-[150] mr-[-7.4%] md:mr-0"
             width={806.966}
