@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="h-screen bg-[url(/bg-cloud.png)] bg-cover bg-no-repeat overflow-hidden">
-      <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 block md:hidden" />
+      <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 z-[40]" />
       <div className="bg-[url(/bottom-cloud.png)] z-10 bg-bottom bg-contain bg-no-repeat px-8 py-6 h-screen">
         <div className="flex items-center justify-between">
           <Image src="/fudderai-logo.png" alt="logo" width={200} height={200} />
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex items-end justify-center md:h-[80vh] h-[62vh] max-w-[806.966px] mx-auto relative">
+        <div className="flex items-end justify-center md:h-[70vh] h-[62vh] max-w-[806.966px] mx-auto relative">
           <Image
             src="/fuddai-tv.png"
             alt="Fudderai"
@@ -88,7 +88,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex items-center max-w-[541px] mx-auto absolute bottom-6 left-1/2 transform -translate-x-1/2 w-full z-10 px-5">
+        <div className="flex items-center max-w-[541px] mx-auto absolute bottom-6 left-1/2 transform -translate-x-1/2 w-full z-[100] px-5">
           <div className="rounded-l-[15px] bg-[#3C4246] p-[10px] text-2xl text-white">
             CA:
           </div>
