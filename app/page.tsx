@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 export default function Home() {
   const handleCopy = () => {
-    navigator.clipboard.writeText("").then(() => {
+    navigator.clipboard.writeText("00000000000000000000").then(() => {
       toast("Copied to clipboard!");
     });
   };
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 z-[40]" />
       <div className="bg-[url(/bottom-cloud.png)] z-10 bg-bottom bg-contain bg-no-repeat px-8 py-6 h-screen">
         <div className="flex items-center justify-between">
-          <Image src="/fudderai-logo.png" alt="logo" width={200} height={200} />
+          <Image src="/fudder-logo.png" alt="logo" width={200} height={200} />
 
           <div className=" gap-[1.29px] hidden md:flex">
             <Link
@@ -129,7 +129,7 @@ export default function Home() {
           </div>
           <input
             className="bg-[#9EB6D1] md:text-2xl text-base p-[10px] ring-0 w-full"
-            value=""
+            value="00000000000000000000"
           />
           <Button
             className="rounded-l-none rounded-r-[15px] md:p-[10px] p-[6.45px] bg-white hover:bg-white/80 h-auto shadow-none ml-[2px]"

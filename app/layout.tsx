@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fudder",
-  description: "SENT IT TO FUCKING ZERO",
+  description: "SEND IT TO FUCKING ZERO",
 };
 
 export default function RootLayout({
