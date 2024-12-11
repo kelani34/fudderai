@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <Image src="/fudderai-logo.png" alt="logo" width={200} height={200} />
 
-          <div className="flex gap-[1.29px]">
+          <div className=" gap-[1.29px] hidden md:flex">
             <Link
               href="https://x.com/Fudder_AI"
               className={cn(
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-[1.29px] absolute left-1/2 transform -translate-x-1/2 top-[250px]">
+        <div className="flex gap-[1.29px] absolute left-1/2 transform -translate-x-1/2 top-[250px] flex md:hidden">
           <Link
             href="https://x.com/Fudder_AI"
             className={cn(
