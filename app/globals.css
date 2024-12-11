@@ -70,3 +70,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @media (max-height: 600px) {
+    .screen-h-max-600 {
+      height: 50vh;
+    }
+  }
+  @media (min-height: 601px) {
+    .screen-h-min-601 {
+      height: 75vh;
+    }
+  }
+}
