@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 export default function Home() {
   const handleCopy = () => {
-    navigator.clipboard.writeText("2NXaMVsYgcZfeZgRACBTCm").then(() => {
+    navigator.clipboard.writeText("").then(() => {
       toast("Copied to clipboard!");
     });
   };
@@ -129,7 +129,7 @@ export default function Home() {
           </div>
           <input
             className="bg-[#9EB6D1] md:text-2xl text-base p-[10px] ring-0 w-full"
-            value="2NXaMVsYgcZfeZgRACBTCm"
+            value=""
           />
           <Button
             className="rounded-l-none rounded-r-[15px] md:p-[10px] p-[6.45px] bg-white hover:bg-white/80 h-auto shadow-none ml-[2px]"
