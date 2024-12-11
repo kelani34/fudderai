@@ -61,7 +61,7 @@ export default function Home() {
             height={593}
             className="absolute block md:hidden right-0 z-[100]"
           />
-          <div className="absolute bottom-[-32%] w-full flex md:hidden items-center justify-center ">
+          <div className="absolute bottom-[-32%] w-full flex md:hidden items-center justify-center z-[160] opacity-80">
             <Image
               src="/slazzer.png"
               alt="Fudderai"
