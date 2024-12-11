@@ -50,9 +50,16 @@ export default function Home() {
           <Image
             src="/dippp.png"
             alt="Fudderai"
+            width={145}
+            height={770}
+            className="absolute hidden md:block right-0 z-[100]"
+          />
+          <Image
+            src="/dippp.png"
+            alt="Fudderai"
             width={111.669}
             height={593}
-            className="absolute right-0 z-[100]"
+            className="absolute block md:hidden right-0 z-[100]"
           />
           <div className="absolute bottom-[-32%] w-full flex md:hidden items-center justify-center ">
             <Image
@@ -64,7 +71,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="absolute md:flex hidden  items-center justify-between  bottom-0 md:w-[150%]  ">
+          <div className="absolute md:flex hidden  items-center justify-between  bottom-0 md:w-[155%]  ">
             <Image
               src="/slazzer.png"
               alt="Fudderai"
