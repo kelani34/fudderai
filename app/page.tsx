@@ -15,7 +15,7 @@ export default function Home() {
   };
   return (
     <div className="h-screen bg-[url(/bg-cloud.png)] bg-cover bg-no-repeat overflow-hidden relative">
-      <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 z-[40]" />
+      <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 z-[50]" />
       <div className="bg-[url(/bottom-cloud.png)] z-10 bg-bottom bg-contain bg-no-repeat px-8 py-6 h-screen">
         <div className="flex items-center justify-between">
           <Image src="/fudder-logo.png" alt="logo" width={200} height={200} />
@@ -87,14 +87,14 @@ export default function Home() {
             alt="Fudderai"
             width={145}
             height={700}
-            className="absolute hidden md:block right-0 z-[100]"
+            className="absolute hidden md:block right-0 z-[40]"
           />
           <Image
             src="/dipppm.png"
             alt="Fudderai"
             width={85}
             height={593}
-            className="absolute block md:hidden right-0 z-[100]"
+            className="absolute block md:hidden right-0 z-[40]"
           />
           <div className="absolute h-sm:bottom-[-32%] bottom-[-35%]  w-full flex md:hidden items-center justify-center z-[160] opacity-80">
             <Image
