@@ -38,6 +38,31 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="flex gap-[1.29px] absolute left-1/2 transform -translate-x-1/2 top-[250px]">
+          <Link
+            href="https://x.com/Fudder_AI"
+            className={cn(
+              buttonVariants(),
+              "border-l-0 bg-white/50 rounded-l-[14.207px] rounded-r-none p-[14.499px] h-auto"
+            )}
+          >
+            <Image
+              src="/x.svg"
+              width={24.539}
+              height={24.539}
+              alt="Arrow Left"
+            />
+          </Link>
+          <Button className="border-l-0 bg-white/50 rounded-r-[14.207px] rounded-l-none p-[14.499px] h-auto">
+            <Image
+              src="/pumpfun.svg"
+              width={27.78}
+              height={29.433}
+              alt="Arrow Left"
+            />
+          </Button>
+        </div>
+
         <div className="flex items-end justify-center md:h-[70vh] h-[62vh] max-w-[806.966px] mx-auto relative">
           <Image
             src="/fuddai-tv.png"
