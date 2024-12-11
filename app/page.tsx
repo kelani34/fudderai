@@ -32,6 +32,7 @@ export default function Home() {
                 src="/pumpfun.svg"
                 width={27.78}
                 height={29.433}
+                className="invisible"
                 alt="Arrow Left"
               />
             </Button>
@@ -58,6 +59,7 @@ export default function Home() {
               src="/pumpfun.svg"
               width={27.78}
               height={29.433}
+              className="invisible"
               alt="Arrow Left"
             />
           </Button>
