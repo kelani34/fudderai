@@ -44,7 +44,7 @@ export default function Home() {
             href="https://x.com/Fudder_AI"
             className={cn(
               buttonVariants(),
-              "border-l-0 bg-white/50 rounded-l-[14.207px] rounded-r-none p-[14.499px] h-auto"
+              "border-l-0 bg-white/50 hover:bg-white/30 rounded-l-[14.207px] rounded-r-none p-[14.499px] h-auto"
             )}
           >
             <Image
@@ -54,7 +54,7 @@ export default function Home() {
               alt="Arrow Left"
             />
           </Link>
-          <Button className="border-l-0 bg-white/50 rounded-r-[14.207px] rounded-l-none p-[14.499px] h-auto">
+          <Button className="border-l-0 bg-white/50 hover:bg-white/30 rounded-r-[14.207px] rounded-l-none p-[14.499px] h-auto">
             <Image
               src="/pumpfun.svg"
               width={27.78}
