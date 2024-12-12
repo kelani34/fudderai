@@ -11,7 +11,7 @@ export default function Embed() {
   return (
     <TwitterTimelineEmbed
       sourceType="profile"
-      screenName="Fudder_AI"
+      screenName="jibolaojo"
       noBorders
       // options={{ height: 445.186, width: 605.004, tweetLimit: 8 }}
       noFooter
