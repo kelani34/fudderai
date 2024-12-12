@@ -91,7 +91,7 @@ export default function Home() {
             <div className="absolute inset-0  flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] max-h-[420px] overflow-hidden justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-[-20px]">
               <TwitterTimelineEmbed
                 sourceType="profile"
-                screenName="kelanicodes"
+                screenName="Fudder_AI"
                 noBorders
                 // options={{ height: 445.186, width: 605.004, tweetLimit: 8 }}
                 noFooter
