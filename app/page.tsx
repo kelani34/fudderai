@@ -96,8 +96,6 @@ export default function Home() {
                 // options={{ height: 445.186, width: 605.004, tweetLimit: 8 }}
                 noFooter
                 transparent
-                // limit={8}
-                maxwidth={190}
                 autoHeight
                 theme="dark"
               />
