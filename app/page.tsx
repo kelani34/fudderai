@@ -76,14 +76,14 @@ export default function Home() {
         </div>
 
         <div className="flex items-end justify-center h-sm:md:h-[70vh] h-sm:h-[62vh] h-[54vh] max-w-[806.966px] mx-auto relative">
-          <div className="relative w-full md:h-[583px] h-[267.292px]">
+          <div className="relative w-full md:h-[583px] h-[267.292px] overflow-hidden ">
             <div className="absolute inset-0 bg-black [&>div]:h-full [&>div]:w-full [&>div]:p-8 flex items-center justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4">
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="Fudder_AI"
                 noBorders
-                // options={{ height: 445.186, width: 605.004 }}
-                // autoHeight
+                options={{ height: 305.186, width: 605.004 }}
+                autoHeight
                 theme="dark"
               />
             </div>
