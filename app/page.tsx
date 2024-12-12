@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Copy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { toast } from "sonner";
 
 export default function Home() {
@@ -74,13 +75,26 @@ export default function Home() {
         </div>
 
         <div className="flex items-end justify-center h-sm:md:h-[70vh] h-sm:h-[62vh] h-[54vh] max-w-[806.966px] mx-auto relative">
-          <Image
-            src="/tv-fuderrr.svg"
-            alt="Fudderai"
-            className="z-[150] mr-[-7.4%] md:mr-0"
-            width={806.966}
-            height={583}
-          />
+          <div className="relative w-full h-[583px]">
+            <div className="absolute inset-0 bg-black flex items-center justify-center w-[80%] h-[90%] top-6 left-16">
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="Fudder_AI"
+                noBorders
+                options={{ height: 445.186, width: 605.004 }}
+                theme="dark"
+              />
+            </div>
+            <div className="absolute inset-0">
+              <Image
+                src="/tv-fudder-skin.svg"
+                alt="Fudderai"
+                className="z-10 w-full h-full mr-[-7.4%] md:mr-0"
+                width={806.966}
+                height={583}
+              />
+            </div>
+          </div>
 
           <Image
             src="/dippp.png"
