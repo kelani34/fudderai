@@ -5,8 +5,10 @@ import { cn } from "@/lib/utils";
 import { Copy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { toast } from "sonner";
+import Embed from "./embed";
 
 export default function Home() {
   const handleCopy = () => {
@@ -14,6 +16,7 @@ export default function Home() {
       toast("Copied to clipboard!");
     });
   };
+
   return (
     <div className="h-screen bg-[url(/bg-cloud.png)] bg-cover bg-no-repeat overflow-hidden relative">
       <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 z-[50]" />
@@ -89,16 +92,7 @@ export default function Home() {
             </div>
 
             <div className="absolute inset-0  flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] max-h-[420px] overflow-hidden justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-[-20px]">
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="Fudder_AI"
-                noBorders
-                // options={{ height: 445.186, width: 605.004, tweetLimit: 8 }}
-                noFooter
-                transparent
-                autoHeight
-                theme="dark"
-              />
+              <Embed />
             </div>
           </div>
           <Image
