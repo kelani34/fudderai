@@ -84,10 +84,16 @@ body {
   }
 }
 
-/* .twitter-timeline-rendered {
+.twitter-timeline-rendered {
   width: 100% !important;
   height: 100% !important;
-} */
+}
+
+@media (max-width: 768px) {
+  .twitter-timeline-rendered {
+    scale: 0.7;
+  }
+}
 
 /* #twitter-widget-0 {
   height: 200px !important;

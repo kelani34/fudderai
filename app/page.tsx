@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { toast } from "sonner";
-import { TVFudder } from "./tv-fudder-skin";
 
 export default function Home() {
   const handleCopy = () => {
@@ -76,33 +75,34 @@ export default function Home() {
         </div>
 
         <div className="flex items-end justify-center h-sm:md:h-[70vh] h-sm:h-[62vh] h-[54vh] max-w-[806.966px] mx-auto relative">
-          <div className="relative w-full md:h-[583px] h-[267.292px] overflow-hidden ">
-            <div className="absolute inset-0 bg-black [&>div]:h-full [&>div]:relative [&>div]:w-full md:[&>div]:p-8 flex items-center justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4">
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="Fudder_AI"
-                noBorders
-                // options={{ height: 305.186, width: 605.004 }}
-                // autoHeight
-                theme="dark"
-              />
-            </div>
+          <div className="relative w-full md:h-[583px] h-[267.292px]">
+            <div className="absolute inset-0 bg-black flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4" />
+
             <div className="absolute inset-0">
-              {/* <Image
+              <Image
                 src="/tv-fudder-skin.svg"
                 alt="Fudderai"
                 className="z-10 w-full h-full mr-[-7.4%] md:mr-0"
                 width={806.966}
                 height={583}
-              /> */}
-              <TVFudder
-                width="806.966"
-                height="583"
-                className="z-10 w-full h-full mr-[-7.4%] md:mr-0"
+              />
+            </div>
+
+            <div className="absolute inset-0  flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] max-h-[420px] overflow-hidden justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-[-20px]">
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="kelanicodes"
+                noBorders
+                // options={{ height: 445.186, width: 605.004, tweetLimit: 8 }}
+                noFooter
+                transparent
+                // limit={8}
+                maxwidth={190}
+                autoHeight
+                theme="dark"
               />
             </div>
           </div>
-
           <Image
             src="/dippp.png"
             alt="Fudderai"
