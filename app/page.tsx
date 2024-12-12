@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { toast } from "sonner";
+import { TVFudder } from "./tv-fudder-skin";
 
 export default function Home() {
   const handleCopy = () => {
@@ -76,23 +77,28 @@ export default function Home() {
 
         <div className="flex items-end justify-center h-sm:md:h-[70vh] h-sm:h-[62vh] h-[54vh] max-w-[806.966px] mx-auto relative">
           <div className="relative w-full md:h-[583px] h-[267.292px]">
-            <div className="absolute inset-0 bg-black flex items-center justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4">
+            <div className="absolute inset-0 bg-black [&>div]:h-full [&>div]:w-full [&>div]:p-8 flex items-center justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4">
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="Fudder_AI"
                 noBorders
                 // options={{ height: 445.186, width: 605.004 }}
-                autoHeight
+                // autoHeight
                 theme="dark"
               />
             </div>
             <div className="absolute inset-0">
-              <Image
+              {/* <Image
                 src="/tv-fudder-skin.svg"
                 alt="Fudderai"
                 className="z-10 w-full h-full mr-[-7.4%] md:mr-0"
                 width={806.966}
                 height={583}
+              /> */}
+              <TVFudder
+                width="806.966"
+                height="583"
+                className="z-10 w-full h-full mr-[-7.4%] md:mr-0"
               />
             </div>
           </div>
