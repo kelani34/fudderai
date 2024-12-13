@@ -17,7 +17,7 @@ export default function Home() {
     });
   };
 
-  const tweets = ["1867615400487182835"];
+  const tweets = ["1867615400487182835", "1867600300967620854", "1867585201502581009", "1867585201502581009", "1867570102016553428"];
 
   return (
     <div className="h-screen bg-[url(/bg-cloud.png)] bg-cover bg-no-repeat overflow-hidden relative">
