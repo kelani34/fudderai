@@ -79,7 +79,7 @@ export default function Home() {
 
         <div className="flex items-end justify-center h-sm:md:h-[70vh] h-sm:h-[62vh] h-[54vh] max-w-[806.966px] mx-auto relative">
           <div className="relative w-full md:h-[583px] h-[267.292px]">
-            <div className="absolute inset-0 bg-black flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4" />
+            <div className="absolute inset-0 bg-[#151f2b] flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-4" />
 
             <div className="absolute inset-0">
               <Image
@@ -91,7 +91,8 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute inset-0  flex items-center  [&>div]:h-[80%] [&>div]:relative [&>div]:w-[80%] max-h-[420px] overflow-hidden justify-center md:w-[80%] w-[90%] h-[70%]  md:h-[90%] top-6 md:left-16 left-[-20px]">
+            <div className="absolute  inset-0 grid-cols-1  grid !justify-items-center [&>div]:relative  md:[&>div]:max-h-none [&>div]:max-h-[200px]  [&>div]:scale-75 md:[&>div]:scale-100 [&>div]:w-[80%] md:max-h-[400px] max-h-[300px] overflow-y-scroll justify-center md:w-[80%] w-[90%] h-[65%]  md:h-[90%] md:top-16 top-[30px] md:left-16  ">
+              <Embed />
               <Embed />
             </div>
           </div>
