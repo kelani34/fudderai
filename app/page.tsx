@@ -17,6 +17,8 @@ export default function Home() {
     });
   };
 
+  const tweets = ["1867615400487182835"];
+
   return (
     <div className="h-screen bg-[url(/bg-cloud.png)] bg-cover bg-no-repeat overflow-hidden relative">
       <div className="bg-[#D9D9D9] blur-custom filter w-[150%] ml-[-10%] h-[291px] absolute bottom-0 z-[50]" />
@@ -92,8 +94,9 @@ export default function Home() {
             </div>
 
             <div className="absolute  inset-0 grid-cols-1  grid !justify-items-center [&>div]:relative  md:[&>div]:max-h-none [&>div]:max-h-[200px]  [&>div]:scale-75 md:[&>div]:scale-100 [&>div]:w-[80%] md:max-h-[400px] max-h-[300px] overflow-y-scroll justify-center md:w-[80%] w-[90%] h-[65%]  md:h-[90%] md:top-16 top-[30px] md:left-16  ">
-              <Embed />
-              <Embed />
+              {tweets.map((tweetId) => (
+                <Embed key={tweetId} tweetId={tweetId} />
+              ))}
             </div>
           </div>
           <Image

@@ -7,11 +7,11 @@ const TwitterTweetEmbed = dynamic(
   }
 );
 
-export default function Embed() {
+export default function Embed({ tweetId }: { tweetId: string }) {
   return (
     <TwitterTweetEmbed
       placeholder="Loading..."
-      tweetId={"1867615400487182835"}
+      tweetId={tweetId}
       options={{ theme: "dark", transparent: true }}
       // sourceType="profile"
       // screenName="Fudder_AI"
